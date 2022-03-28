@@ -1,0 +1,14 @@
+html {
+  box-sizing: border-box;
+  font-family: sans-serif;
+  font-size: 1.25rem;
+  background-color: #fff;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+.banner {
+  flex-wrap: nowrap;
+}
