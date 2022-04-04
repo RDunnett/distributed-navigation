@@ -1,14 +1,19 @@
 html {
   box-sizing: border-box;
   font-family: sans-serif;
-  font-size: 1.25rem;
+  font-size: 1.125rem;
   background-color: #fff;
   line-height: 1.5;
-  margin-bottom: auto;
+  margin: 0;
 }
 
 *, *::before, *::after {
   box-sizing: inherit;
+}
+
+body {
+  display: flex;
+  margin: 0;
 }
 
 header {
@@ -18,17 +23,41 @@ header {
   align-items: center;
 }
 
-header ul {
+header h1 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+nav ul {
+  display: flex;
+  font-size: 1.125rem;
+  margin: auto;
+}
+
+nav a {
   display: flex;
   color: #0074d9;
   justify-content: flex-end;
-  order: 1000;
+  margin-left: 1rem;
+  padding-left: 1rem;
+  text-decoration: none;
 }
-img {
-order: -1;
-width: 2rem;
+
+nav a:hover {
+  color: #fff;
+  background-color: #fff;
+}
+
+header img {
+  order: -1;
+  width: 2rem;
 }
 
 ul li {
   list-style: none;
+  align-content: flex-end;
+}
+
+header p {
+  padding: 1em;
 }
