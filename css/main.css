@@ -3,12 +3,32 @@ html {
   font-family: sans-serif;
   font-size: 1.25rem;
   background-color: #fff;
+  line-height: 1.5;
+  margin-bottom: auto;
 }
 
 *, *::before, *::after {
   box-sizing: inherit;
 }
 
-.banner {
+header {
+  display: flex;
   flex-wrap: nowrap;
+  background-color: #e2e2e2;
+  align-items: center;
+}
+
+header ul {
+  display: flex;
+  color: #0074d9;
+  justify-content: flex-end;
+  order: 1000;
+}
+img {
+order: -1;
+width: 2rem;
+}
+
+ul li {
+  list-style: none;
 }
